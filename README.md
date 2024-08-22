@@ -27,7 +27,9 @@ The model is trained on the [Face Mask Detection Dataset](https://drive.google.c
     ```
 
 2. **Install the required dependencies:**
-    - install [CUDA 11.3](https://developer.nvidia.com/cuda-11.3.0-download-archive)
+
+   install [CUDA 11.3](https://developer.nvidia.com/cuda-11.3.0-download-archive)
+
 
     ```bash
     pip install -r requirements.txt
