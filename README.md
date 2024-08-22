@@ -8,23 +8,16 @@ Welcome to the Face Mask Detection project! This repository contains code and re
 
 ## Table of Contents
 - [Introduction](#introduction)
-- [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Inference](#inference)
 - [Results](#results)
 - [License](#license)
 
 ## Introduction
-The aim of this project is to develop an efficient and accurate face mask detection system. Leveraging the YOLOv7 architecture, the model is capable of detecting whether individuals in images or videos are wearing face masks, making it highly applicable in real-world scenarios such as public health monitoring and security systems.
-
-## Features
-- **Real-time Detection**: Detects face masks in real-time using video streams.
-- **High Accuracy**: Achieves high precision and recall using YOLOv7.
-- **Scalable**: Can be deployed on various platforms.
+This project aims to develop an efficient and accurate face mask detection system. Leveraging the YOLOv7 architecture, the model can detect whether individuals in images, videos, or camera feeds are wearing face masks, making it highly applicable in real-world scenarios such as public health monitoring and security systems.
 
 ## Dataset
-The model is trained on the [Face Mask Detection Dataset](https://www.kaggle.com/datasets/andrewmvd/face-mask-detection?resource=download) available on Kaggle. This dataset contains images of people with and without face masks, annotated for object detection tasks.
+The model is trained on the [Face Mask Detection Dataset](https://drive.google.com/file/d/1khxkAyETVO7QXlDNlbVFybsIupSAb2Ha/view?usp=sharing) which was derived from a dataset on [Kaggle](https://www.kaggle.com/datasets/andrewmvd/face-mask-detection?resource=download) that was modified from Pascal VOC to YOLO format. This dataset contains images of people with and without face masks or wearing them incorrectly, annotated for object detection tasks.
 
 ## Installation
 1. **Clone the repository:**
@@ -34,41 +27,24 @@ The model is trained on the [Face Mask Detection Dataset](https://www.kaggle.com
     ```
 
 2. **Install the required dependencies:**
+    - install [CUDA 11.3](https://developer.nvidia.com/cuda-11.3.0-download-archive)
+
     ```bash
     pip install -r requirements.txt
+    pip install -r pytorch_install.txt
     ```
     
 ## Usage
-### Running Inference on Images
-You can run inference on individual images to detect face masks:
-
-```bash
-python detect.py --source path/to/image.jpg --weights weights/yolov7.pt --conf-thres 0.5
-```
-
-### Running Inference on Videos
-Similarly, you can run inference on videos:
-
-```bash
-python detect.py --source path/to/video.mp4 --weights weights/yolov7.pt --conf-thres 0.5
-```
 
 ### Running Inference on Live Webcam
 To perform real-time detection using a webcam:
 
 ```bash
-python detect.py --source 0 --weights weights/yolov7.pt --conf-thres 0.5
-```
-
-## Inference
-To evaluate the model on a test dataset:
-
-```bash
-python test.py --data data/face_mask.yaml --weights weights/best.pt
+python detect.py --source 0 --weights (model-path) --conf-thres 0.5 --img-size 640 --view-img --no-trace
 ```
 
 ## Results
-Here, you can showcase some results from your model, including images with detected face masks and performance metrics such as mAP, precision, and recall.
+TODO
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
