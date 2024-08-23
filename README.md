@@ -7,7 +7,6 @@ Welcome to the Face Mask Detection project! This repository contains code and re
 - [Installation](#installation)
 - [Usage](#usage)
 - [Results](#results)
-- [Contributers](#contributers)
 - [License](#license)
 
 ## Introduction
@@ -56,11 +55,6 @@ python detect.py --source 0 --weights mask-model.pt --conf-thres 0.7 --img-size 
 
 # PR_curve
 ![Alt text](https://github.com/Douvakiing/yolov7-mask-detection/blob/main/results/PR_curve.png)
-
-## Contributers
-<a href="https://github.com/Douvakiing/yolov7-mask-detection/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Douvakiing/yolov7-mask-detection" />
-</a>
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
