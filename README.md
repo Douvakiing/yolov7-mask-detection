@@ -43,7 +43,19 @@ python detect.py --source 0 --weights mask-model.pt --conf-thres 0.7 --img-size 
 ```
 
 ## Results
-TODO
+![Alt text](https://github.com/Douvakiing/yolov7-mask-detection/blob/main/results/results.png)
+
+# F1 curve
+![Alt text](https://github.com/Douvakiing/yolov7-mask-detection/blob/main/results/F1_curve.png)
+
+# R_curve
+![Alt text](https://github.com/Douvakiing/yolov7-mask-detection/blob/main/results/R_curve.png)
+
+# P_curve
+![Alt text](https://github.com/Douvakiing/yolov7-mask-detection/blob/main/results/P_curve.png)
+
+# PR_curve
+![Alt text](https://github.com/Douvakiing/yolov7-mask-detection/blob/main/results/PR_curve.png)
 
 ## Contributers
 <a href="https://github.com/Douvakiing/yolov7-mask-detection/graphs/contributors">
