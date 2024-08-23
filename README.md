@@ -1,7 +1,3 @@
-Here's the updated README with the dataset information included:
-
----
-
 # Face Mask Detection Using YOLOv7
 
 Welcome to the Face Mask Detection project! This repository contains code and resources to train and deploy a face mask detection model using the YOLOv7 architecture.
@@ -11,6 +7,7 @@ Welcome to the Face Mask Detection project! This repository contains code and re
 - [Installation](#installation)
 - [Usage](#usage)
 - [Results](#results)
+- [Contributers](#contributers)
 - [License](#license)
 
 ## Introduction
@@ -47,6 +44,11 @@ python detect.py --source 0 --weights (model-path) --conf-thres 0.5 --img-size 6
 
 ## Results
 TODO
+
+## Contributers
+<a href="https://github.com/Douvakiing/yolov7-mask-detection/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Douvakiing/yolov7-mask-detection" />
+</a>
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
