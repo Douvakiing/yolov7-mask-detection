@@ -39,7 +39,7 @@ The model is trained on the [Face Mask Detection Dataset](https://drive.google.c
 To perform real-time detection using a webcam:
 
 ```bash
-python detect.py --source 0 --weights (model-path) --conf-thres 0.5 --img-size 640 --view-img --no-trace
+python detect.py --source 0 --weights mask-model.pt --conf-thres 0.7 --img-size 640 --view-img --no-trace
 ```
 
 ## Results
